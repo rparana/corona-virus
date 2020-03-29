@@ -1,0 +1,330 @@
+/* RESET
+--------*/
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Filson Pro', sans-serif;
+    font-size: inherit;
+}
+
+input,
+select,
+iframe,
+button {
+    border: none;
+    font-family: 'Filson Pro Heavy', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    border: none;
+}
+
+
+/*FONTS
+-----------------*/
+
+@font-face {
+    font-family: 'Filson Pro';
+    src: url("../Filson-Pro/filson-pro-regular.eot");
+    src: url("../Filson-Pro/filson-pro-regular.eot") format("eot"), url("../Filson-Pro/filson-pro-regular.woff") format("woff"), url("../Filson-Pro/filson-pro-regular.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Filson Pro Heavy';
+    src: url("../Filson-Pro/filson-pro-heavy.eot");
+    src: url("../Filson-Pro/filson-pro-heavy.eot") format("eot"), url("../Filson-Pro/filson-pro-heavy.woff") format("woff"), url("../Filson-Pro/filson-pro-heavy.otf") format("otf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*GERAL
+-----------------*/
+
+.section {
+    float: left;
+    width: 100vw;
+}
+
+.content {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.row {
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+
+
+/*Header
+-----------------*/
+
+.header {
+    width: 100%;
+    margin: 20px 0;
+    padding-top: 10px;
+    z-index: 6;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.header .logo img {
+    max-width: 154px;
+}
+
+
+/*Banner Principal
+------------------------*/
+
+.banner-box {
+    text-align: center;
+    color: #FFF;
+    width: 100vw;
+    min-height: 314px;
+    background-image: url('../images/Corona\ Virus_grupomassa_03.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*Testo principal
+-----------------*/
+
+.text-col {
+    color: #002561;
+    margin: 20px 10px;
+    padding: 70px 10px;
+    text-align: center;
+    margin: auto;
+    max-width: 468px;
+}
+
+.text-col h1 {
+    font-family: 'Filson Pro';
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.text-col p {
+    margin-top: 30px;
+    font-family: 'Filson Pro';
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*BOX
+-----------------*/
+
+.texto-recomendacao {
+    padding: 30px 0;
+    font-family: 'Filson Pro Heavy';
+    font-size: 24px;
+    font-weight: 400;
+    color: #009ADA;
+}
+
+img {
+    max-width: 100%;
+    border: none;
+}
+
+.content-cards {
+    margin-bottom: 50px;
+}
+
+.box {
+    min-height: 400px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.box-cover {
+    overflow: hidden;
+}
+
+.box-cover img {
+    width: 100%;
+    max-height: 60%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.box-details {
+    height: 150px;
+    display: grid;
+    grid-template: 80% 20%/1fr;
+    grid-template-areas: "title" "button";
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.box-button {
+    align-self: center;
+    justify-self: center;
+    grid-area: button;
+}
+
+.btn-download {
+    color: #fff;
+    font-family: 'Filson Pro Heavy';
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: #009ADA;
+    margin: 10px;
+    padding: 15px 25px;
+}
+
+.btn-download:hover {
+    background-color: #002561;
+}
+
+.box-details-info {
+    align-self: center;
+    text-align: center;
+    grid-area: title;
+    margin: 5px;
+    padding: 0 10px;
+}
+
+.box-details-info h2 {
+    color: #002561;
+    font-family: "Filson Pro";
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.box-details-info h2 strong {
+    color: #002561;
+    font-family: "Filson Pro";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* BREAKPOINT MÍNIMO
+--------------------*/
+
+@media (min-width: 768px) {
+    /* DESTINOS
+--------------------*/
+    .col-card {
+        width: 32%;
+        float: left;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+    .box {
+        margin: 0px;
+    }
+    .col.destino:nth-child(odd) {
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+    .col.destino:first-child {
+        width: 100%;
+    }
+    /* DESTAQUES
+--------------------*/
+    .col.destaque {
+        width: 49%;
+        margin-right: 2%;
+        float: left;
+    }
+    .col-card:nth-of-type(3n+0) {
+        margin-right: 0;
+    }
+}
+
+
+/* AUXILIARES
+-----------------*/
+
+.box-shadow {
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .12), 0px 3px 1px -2px rgba(0, 0, 0, .12), 0px 1px 5px 0px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .12), 0px 3px 1px -2px rgba(0, 0, 0, .12), 0px 1px 5px 0px rgba(0, 0, 0, .2);
+    -ms-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .12), 0px 3px 1px -2px rgba(0, 0, 0, .12), 0px 1px 5px 0px rgba(0, 0, 0, .2);
+    -o-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .12), 0px 3px 1px -2px rgba(0, 0, 0, .12), 0px 1px 5px 0px rgba(0, 0, 0, .2);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .12), 0px 3px 1px -2px rgba(0, 0, 0, .12), 0px 1px 5px 0px rgba(0, 0, 0, .2);
+}
+
+.bg-fixed {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.fl-left {
+    float: left;
+}
+
+.fl-right {
+    float: right;
+}
+
+.bg-gray {
+    background-color: #dcdcdc;
+}
