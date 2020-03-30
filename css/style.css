@@ -58,17 +58,15 @@ img {
 
 @font-face {
     font-family: 'Filson Pro';
-    src: url("../Filson-Pro/filson-pro-regular.eot");
-    src: url("../Filson-Pro/filson-pro-regular.eot") format("eot"), url("../Filson-Pro/filson-pro-regular.woff") format("woff"), url("../Filson-Pro/filson-pro-regular.otf") format("otf");
+    src: url('../Filson-Pro/filson-pro-regular-webfont.woff2') format('woff2'), url('../Filson-Pro/filson-pro-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Filson Pro Heavy';
-    src: url("../Filson-Pro/filson-pro-heavy.eot");
-    src: url("../Filson-Pro/filson-pro-heavy.eot") format("eot"), url("../Filson-Pro/filson-pro-heavy.woff") format("woff"), url("../Filson-Pro/filson-pro-heavy.otf") format("otf");
-    font-weight: 700;
+    src: url('../Filson-Pro/filson-pro-heavy-webfont.woff2') format('woff2'), url('../Filson-Pro/filson-pro-heavy-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -121,7 +119,7 @@ img {
     text-align: center;
     color: #FFF;
     width: 100vw;
-    min-height: 314px;
+    min-height: 124px;
     background-image: url('../images/Corona\ Virus_grupomassa_03.png');
     background-size: cover;
     background-position: center;
@@ -159,7 +157,7 @@ img {
 -----------------*/
 
 .texto-recomendacao {
-    padding: 30px 0;
+    padding: 50px 0;
     font-family: 'Filson Pro Heavy';
     font-size: 24px;
     font-weight: 400;
@@ -172,7 +170,7 @@ img {
 }
 
 .content-cards {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .box {
@@ -251,12 +249,32 @@ img {
     font-weight: 700;
 }
 
+.footer {
+    display: block;
+    background-color: #002561;
+}
+
+.footer {
+    padding: 35px 0;
+    min-height: 115px;
+    text-align: center;
+}
+
+.footer .logo img {
+    max-width: 220px;
+}
+
 
 /* BREAKPOINT MÍNIMO
 --------------------*/
 
 @media (min-width: 768px) {
-    /* DESTINOS
+    /* Cards
+--------------------*/
+    .banner-box {
+        min-height: 314px;
+    }
+    /* Cards
 --------------------*/
     .col-card {
         width: 32%;
@@ -266,20 +284,6 @@ img {
     }
     .box {
         margin: 0px;
-    }
-    .col.destino:nth-child(odd) {
-        margin-right: 0;
-        margin-bottom: 2%;
-    }
-    .col.destino:first-child {
-        width: 100%;
-    }
-    /* DESTAQUES
---------------------*/
-    .col.destaque {
-        width: 49%;
-        margin-right: 2%;
-        float: left;
     }
     .col-card:nth-of-type(3n+0) {
         margin-right: 0;

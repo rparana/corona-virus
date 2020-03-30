@@ -1,6 +1,6 @@
 # Trabalhando com HTML, CSS e JavaScript.
 
-## Layout desenvolvido para apresentação no curso de pós em Desenvolvimento WEB e Mobile.
+## Landing page para orientações aos funcionários sobre o Coronavírus.
 ## Linguagem HTM5 / JS / CSS / fontawesome
 
 ## Layout pretendido.
